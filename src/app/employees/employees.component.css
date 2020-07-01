@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  }
+  .topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  }
+  #btnAdd{
+    background-color: #343A40;
+    color: white;
+    border: none;
+  }
+  #btnedit{
+    background-color: rgb(109, 75, 75);
+    color: white;
+    border: none;
+  }

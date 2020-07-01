@@ -1,0 +1,27 @@
+<h1>Add Employee</h1>
+
+<form>
+<label for="name">Employee Id</label>
+<input type="text" class="form-control" id="empId" placeholder="Employee Id" [(ngModel)]="employee.empId" name="empId">
+
+<label for="firstname">First Name</label>
+<input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname" [(ngModel)]="employee.firstname">
+
+<label for="lastname">Last Name</label>
+<input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname" [(ngModel)]="employee.lastname">
+
+<label for="address">Address</label>
+<input type="text" class="form-control" id="address" placeholder="Address" name="address" [(ngModel)]="employee.address">
+
+<label for="dateofBirth">Date of Birth</label>
+<input type="text" class="form-control" id="dateofBirth" placeholder="Date of Birth" name="dateofBirth" [(ngModel)]="employee.dateofBirth">
+
+<label for="mobile">Mobile</label>
+<input type="text" class="form-control" id="mobile" placeholder="Mobile Number" name="mobile" [(ngModel)]="employee.mobile">
+
+<label for="city">City</label>
+<input type="text" class="form-control" id="city" placeholder="City" name="city" [(ngModel)]="employee.city">
+
+<br>
+<button type="button" class="btn btn-success" (click)="saveEmployee()">Save Employee</button>
+</form>

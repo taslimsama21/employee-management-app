@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="topright">
+    <a class="btn btn-primary mb-3" id="btnAdd" (click)="addEmoloyee()">Add Employee</a>
+  </div>
+  <br>
+  <div class="container row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Emp.ID</th>
+            <th>First Name</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <td>{{employee.empId}}</td>
+            <td>{{employee.firstname}}</td>
+            <td>
+              <button type="button" class="btn btn-primary" (click)="viewEmployee(employee.id)">Show Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+     <app-save-employee *ngIf="action === 'edit' ||  action === 'add'" [employee]="selectedEmployee" (employeeAddedEvent)="refreshData()"> </app-save-employee>
+      <app-view-employee *ngIf="action === 'view'" [employee]="selectedEmployee" (emplyeeDeletedEvent)="refreshData()"></app-view-employee>
+    </div>
+  </div>
+</div>
+
+

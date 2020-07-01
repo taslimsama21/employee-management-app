@@ -1,0 +1,35 @@
+<h1>Employee Details</h1>
+
+    <table>
+        <tr>
+            <td>Employee Id</td>
+            <td>{{employee.empId}}</td>
+        </tr>
+        <tr>
+            <td>Employee First Name</td>
+            <td>{{employee.firstname}}</td>
+        </tr>
+        <tr>
+            <td>Employee Last Name</td>
+            <td>{{employee.lastname}}</td>
+        </tr>
+        <tr>
+            <td>Employee Address</td>
+            <td>{{employee.address}}</td>
+        </tr>
+        <tr>
+             <td>Employee Date of Birth</td>
+             <td>{{employee.dateofBirth}}</td>
+        </tr>
+         <tr>
+             <td>Employee Mobile</td>
+             <td>{{employee.mobile}}</td>
+       </tr>
+        <tr>
+             <td>Employee City</td>
+             <td>{{employee.city}}</td>
+        </tr>
+    </table>
+
+    <a class="btn btn-small btn-warning" (click)="editEmployee()" id="lnk">Edit</a>
+    <a class="btn btn-small btn-danger" (click)="deleteEmployee()" id="lnk">Delete</a>
