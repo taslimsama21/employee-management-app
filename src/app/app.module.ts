@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {  FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { authInterceptorProviders } from './interceptor/auth.interceptor';
@@ -11,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { SaveEmployeeComponent } from './save-employee/save-employee.component';
+import { DlDateTimeDateModule, DlDateTimePickerModule } from 'angular-bootstrap-datetimepicker';
 
 
 @NgModule({
@@ -27,7 +29,10 @@ import { SaveEmployeeComponent } from './save-employee/save-employee.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // DlDateTimeDateModule,
+    // DlDateTimePickerModule,
+      //NgbModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
