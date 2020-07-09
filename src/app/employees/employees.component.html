@@ -1,10 +1,8 @@
-<div class="container">
-  <div class="topright">
-    <a class="btn btn-primary mb-3" id="btnAdd" (click)="addEmoloyee()">Add Employee</a>
-  </div>
-  <br>
-  <div class="container row">
+<div class="container row">
     <div class="col-md-12">
+      <div class="topright">
+        <a class="btn btn-primary mb-3" id="btnAdd" (click)="addEmoloyee()">Add Employee</a>
+      </div>
       <table class="table">
         <thead>
           <tr>
@@ -29,6 +27,6 @@
       <app-view-employee *ngIf="action === 'view'" [employee]="selectedEmployee" (emplyeeDeletedEvent)="refreshData()"></app-view-employee>
     </div>
   </div>
-</div>
+
 
 
